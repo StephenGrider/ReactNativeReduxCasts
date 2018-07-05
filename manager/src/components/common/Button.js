@@ -1,11 +1,11 @@
 import React from 'react';
 import { Text, TouchableOpacity } from 'react-native';
 
-const Button = ({ onPress, children }) => {
-  const { buttonStyle, textStyle } = styles;
+const Button = ({ onPress, children, buttonStyle }) => {
+  const { defaultButtonStyle, textStyle } = styles;
 
   return (
-    <TouchableOpacity onPress={onPress} style={buttonStyle}>
+    <TouchableOpacity onPress={onPress} style={[defaultButtonStyle, buttonStyle]}>
       <Text style={textStyle}>
         {children}
       </Text>
@@ -22,7 +22,7 @@ const styles = {
     paddingTop: 10,
     paddingBottom: 10
   },
-  buttonStyle: {
+  defaultButtonStyle: {
     flex: 1,
     alignSelf: 'stretch',
     backgroundColor: '#fff',
