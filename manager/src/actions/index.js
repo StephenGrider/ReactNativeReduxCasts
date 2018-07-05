@@ -46,4 +46,6 @@ const loginUserSuccess = (dispatch, user) => {
     type: LOGIN_USER_SUCCESS,
     payload: user
   });
+
+  // A great place to navigate to EmployeeList
 };
