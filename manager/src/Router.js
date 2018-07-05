@@ -2,11 +2,13 @@ import React from 'react';
 import { createStackNavigator, NavigationActions } from 'react-navigation';
 import EmployeeList from './components/EmployeeList';
 import LoginForm from './components/LoginForm';
+import EmployeeCreate from './components/EmployeeCreate';
 
 const Router = createStackNavigator(
   {
     LoginForm,
-    EmployeeList
+    EmployeeList,
+    EmployeeCreate
   },
   {
     initialRouteName: 'LoginForm'
