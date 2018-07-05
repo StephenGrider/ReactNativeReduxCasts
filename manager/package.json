@@ -11,6 +11,7 @@
     "firebase": "^5.2.0",
     "react": "16.3.1",
     "react-native": "0.55.4",
+    "react-navigation": "^2.5.5",
     "react-redux": "^5.0.7",
     "redux": "^4.0.0",
     "redux-thunk": "^2.3.0"
