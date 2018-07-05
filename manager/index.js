@@ -1,7 +1,8 @@
 import firebase from 'firebase';
-import { AppRegistry } from 'react-native';
+import { AppRegistry, YellowBox } from 'react-native';
 import App from './src/App';
 
+YellowBox.ignoreWarnings(['Warning: isMounted']);
 const config = {
   apiKey: 'AIzaSyDsMT4xSksnXXDEVDgZ-ERDIVogCf9y5lA',
   authDomain: 'manager-1995a.firebaseapp.com',

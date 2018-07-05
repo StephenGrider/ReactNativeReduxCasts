@@ -21,7 +21,6 @@ class LoginForm extends Component {
     const { email, password } = this.props;
 
     this.props.loginUser({ email, password });
-    this.props.navigation.navigate('EmployeeList');
   }
 
   renderButton() {

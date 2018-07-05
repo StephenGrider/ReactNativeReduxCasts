@@ -1,4 +1,5 @@
 import firebase from 'firebase';
+import { navigate } from '../Router';
 import {
   EMAIL_CHANGED,
   PASSWORD_CHANGED,
@@ -47,5 +48,5 @@ const loginUserSuccess = (dispatch, user) => {
     payload: user
   });
 
-  // A great place to navigate to EmployeeList
+  navigate('EmployeeList');
 };
