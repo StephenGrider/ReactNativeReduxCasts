@@ -3,12 +3,14 @@ import { createStackNavigator, NavigationActions } from 'react-navigation';
 import EmployeeList from './components/EmployeeList';
 import LoginForm from './components/LoginForm';
 import EmployeeCreate from './components/EmployeeCreate';
+import EmployeeEdit from './components/EmployeeEdit';
 
 const Router = createStackNavigator(
   {
     LoginForm,
     EmployeeList,
-    EmployeeCreate
+    EmployeeCreate,
+    EmployeeEdit
   },
   {
     initialRouteName: 'LoginForm'

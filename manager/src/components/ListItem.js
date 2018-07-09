@@ -5,7 +5,7 @@ import { navigate } from '../Router';
 
 class ListItem extends Component {
   onRowPress() {
-    navigate('EmployeeCreate', { employee: this.props.employee });
+    navigate('EmployeeEdit', { employee: this.props.employee });
   }
 
   render() {
